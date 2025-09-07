@@ -35,4 +35,27 @@ copyItems.forEach(item => {
     }
 });
 
+// Copy specific files from public to root (if they exist in public)
+const publicFilesToRoot = ['favicon.ico', 'manifest.json'];
+publicFilesToRoot.forEach(file => {
+    const src = path.join('public', file);
+    if (fs.existsSync(src)) {
+        const dest = path.join('dist', file);
+        fs.copySync(src, dest);
+        console.log(`Copied from public to root: ${src} -> ${dest}`);
+    }
+});
+
+// Copy image files from root to dist
+const imageExtensions = ['.jpeg', '.jpg', '.png', '.gif', '.ico', '.svg', '.webp'];
+const rootFiles = fs.readdirSync('.');
+rootFiles.forEach(file => {
+    const ext = path.extname(file).toLowerCase();
+    if (imageExtensions.includes(ext)) {
+        const dest = path.join('dist', file);
+        fs.copySync(file, dest);
+        console.log(`Copied image: ${file} -> ${dest}`);
+    }
+});
+
 console.log('Build completed successfully!');
