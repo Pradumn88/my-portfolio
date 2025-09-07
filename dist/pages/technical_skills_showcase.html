@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Skills - Pradumn Pandey | Data Science & Full-Stack Development</title>
+    <meta name="description" content="Explore Pradumn Pandey's comprehensive technical skills in Data Science, Full-Stack Development, Databases, and modern development tools. Interactive skill showcase with proficiency levels." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpradumnpo9600back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="font-inter bg-background text-text-primary overflow-x-hidden">
+    <!-- Floating Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+        <div class="backdrop-blur-custom bg-white/90 border-b border-surface-200/50">
+            <div class="container-custom px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <!-- Logo/Name -->
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">PP</span>
+                        </div>
+                        <span class="font-poppins font-semibold text-lg text-primary">Pradumn Pandey</span>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="hero_landing_section.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
+                        <a href="about_education_ecosystem.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">About</a>
+                        <a href="technical_skills_showcase.html" class="nav-link text-primary font-medium hover:text-secondary transition-colors duration-200">Skills</a>
+                        <a href="project_portfolio_hub.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">Projects</a>
+                        <a href="experience_achievement_timeline.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">Experience</a>
+                        <a href="contact_professional_nexus.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">Contact</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-surface-100 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <div id="mobile-menu" class="md:hidden mt-4 pb-4 border-t border-surface-200 hidden">
+                    <div class="flex flex-col space-y-3 pt-4">
+                        <a href="hero_landing_section.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Home</a>
+                        <a href="about_education_ecosystem.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">About</a>
+                        <a href="technical_skills_showcase.html" class="text-primary font-medium py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Skills</a>
+                        <a href="project_portfolio_hub.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Projects</a>
+                        <a href="experience_achievement_timeline.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Experience</a>
+                        <a href="contact_professional_nexus.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" class="text-primary"/>
+            </svg>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-16 h-16 bg-secondary/10 rounded-full animate-pulse-slow"></div>
+        <div class="absolute bottom-20 right-16 w-12 h-12 bg-accent/10 rounded-full animate-pulse-slow" style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/2 right-1/4 w-8 h-8 bg-primary/10 rounded-full animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+        <div class="relative z-10 container-custom px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Header -->
+                <div class="inline-flex items-center px-4 py-2 bg-secondary/10 rounded-full mb-6 animate-fade-in">
+                    <svg class="w-5 h-5 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                    <span class="text-sm font-medium text-secondary">Technical Expertise</span>
+                </div>
+
+                <h1 class="hero-title text-primary mb-6 animate-slide-up">
+                    Technical <span class="text-gradient">Skills</span>
+                </h1>
+                <p class="body-lg text-text-secondary mb-8 animate-slide-up" style="animation-delay: 0.2s;">
+                    A comprehensive showcase of my technology stack, from data science to full-stack development
+                </p>
+
+                <!-- Skills Summary Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 animate-scale-in" style="animation-delay: 0.3s;">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary mb-1">15+</div>
+                        <div class="text-sm text-text-secondary">Technologies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-secondary mb-1">4</div>
+                        <div class="text-sm text-text-secondary">Categories</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-accent mb-1">3+</div>
+                        <div class="text-sm text-text-secondary">Years Learning</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-success mb-1">10+</div>
+                        <div class="text-sm text-text-secondary">Projects Built</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Categories Section -->
+    <section class="py-16 bg-white">
+        <div class="container-custom px-6">
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="skill-filter-btn active" data-category="all">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    All Skills
+                </button>
+                <button class="skill-filter-btn" data-category="data-science">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                    Data Science
+                </button>
+                <button class="skill-filter-btn" data-category="full-stack">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                    Full-Stack
+                </button>
+                <button class="skill-filter-btn" data-category="databases">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                    </svg>
+                    Databases
+                </button>
+                <button class="skill-filter-btn" data-category="tools">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    Tools
+                </button>
+            </div>
+
+            <!-- Skills Grid -->
+            <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Data Science Skills -->
+                <div class="skill-card" data-category="data-science" data-skill="python">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-yellow-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">Python</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%"></div>
+                    </div>
+                    <p class="skill-description">Primary language for data analysis, machine learning, and backend development</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Data Analysis</span>
+                        <span class="application-tag">ML Models</span>
+                        <span class="application-tag">APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="data-science" data-skill="pandas">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-blue-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">Pandas</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                    <p class="skill-description">Data manipulation and analysis library for structured data processing</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Data Cleaning</span>
+                        <span class="application-tag">ETL</span>
+                        <span class="application-tag">Analysis</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="data-science" data-skill="numpy">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-blue-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">NumPy</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 80%"></div>
+                    </div>
+                    <p class="skill-description">Numerical computing library for array operations and mathematical functions</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Arrays</span>
+                        <span class="application-tag">Math Operations</span>
+                        <span class="application-tag">Linear Algebra</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="data-science" data-skill="scikit-learn">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-orange-100">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">Scikit-learn</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 75%"></div>
+                    </div>
+                    <p class="skill-description">Machine learning library for classification, regression, and clustering</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">ML Models</span>
+                        <span class="application-tag">Classification</span>
+                        <span class="application-tag">Regression</span>
+                    </div>
+                </div>
+
+                <!-- Full-Stack Development Skills -->
+                <div class="skill-card" data-category="full-stack" data-skill="react">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-blue-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">React</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                    <p class="skill-description">Frontend library for building interactive user interfaces and SPAs</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">SPAs</span>
+                        <span class="application-tag">Components</span>
+                        <span class="application-tag">Hooks</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="full-stack" data-skill="nodejs">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-green-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">Node.js</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 75%"></div>
+                    </div>
+                    <p class="skill-description">JavaScript runtime for building scalable backend applications and APIs</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">REST APIs</span>
+                        <span class="application-tag">Backend</span>
+                        <span class="application-tag">Express</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="full-stack" data-skill="javascript">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-yellow-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">JavaScript</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 88%"></div>
+                    </div>
+                    <p class="skill-description">Core programming language for web development and interactive applications</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Frontend</span>
+                        <span class="application-tag">Backend</span>
+                        <span class="application-tag">DOM</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="full-stack" data-skill="html-css">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-orange-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML/CSS" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">HTML/CSS</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%"></div>
+                    </div>
+                    <p class="skill-description">Foundation technologies for web structure, styling, and responsive design</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Responsive</span>
+                        <span class="application-tag">Flexbox</span>
+                        <span class="application-tag">Grid</span>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-card" data-category="databases" data-skill="sql">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-blue-100">
+                            <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">SQL</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                    <p class="skill-description">Database query language for data retrieval, manipulation, and analysis</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Queries</span>
+                        <span class="application-tag">Joins</span>
+                        <span class="application-tag">Analytics</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="databases" data-skill="mongodb">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-green-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">MongoDB</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 70%"></div>
+                    </div>
+                    <p class="skill-description">NoSQL document database for flexible and scalable data storage</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">NoSQL</span>
+                        <span class="application-tag">Documents</span>
+                        <span class="application-tag">Aggregation</span>
+                    </div>
+                </div>
+
+                <!-- Tools Skills -->
+                <div class="skill-card" data-category="tools" data-skill="git">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-red-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">Git</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                    <p class="skill-description">Version control system for tracking changes and collaborative development</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Version Control</span>
+                        <span class="application-tag">Branching</span>
+                        <span class="application-tag">Collaboration</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="tools" data-skill="docker">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-blue-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">Docker</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 65%"></div>
+                    </div>
+                    <p class="skill-description">Containerization platform for application deployment and scalability</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Containers</span>
+                        <span class="application-tag">Deployment</span>
+                        <span class="application-tag">DevOps</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="tools" data-skill="aws">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-orange-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">AWS</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge beginner">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 55%"></div>
+                    </div>
+                    <p class="skill-description">Cloud computing platform for hosting and scaling applications</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Cloud</span>
+                        <span class="application-tag">EC2</span>
+                        <span class="application-tag">S3</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="tools" data-skill="vscode">
+                    <div class="skill-card-header">
+                        <div class="skill-icon bg-blue-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="w-8 h-8" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="skill-title">VS Code</h3>
+                            <div class="skill-badges">
+                                <span class="skill-badge recently-used">Recently Used</span>
+                                <span class="skill-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 95%"></div>
+                    </div>
+                    <p class="skill-description">Primary code editor with extensive extensions and debugging capabilities</p>
+                    <div class="skill-applications">
+                        <span class="application-tag">Development</span>
+                        <span class="application-tag">Debugging</span>
+                        <span class="application-tag">Extensions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Learning Journey Section -->
+    <!--
+    <section class="py-16 bg-white">
+        <div class="container-custom px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-primary mb-4">Continuous Learning</h2>
+                <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                    My commitment to staying current with technology trends and expanding my skill set
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Currently Learning -->
+                
+
+                <!-- Next Goals -->
+               
+
+                <!-- Certifications -->
+                
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+        <div class="container-custom px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Collaborate?</h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Let's discuss how my technical skills can contribute to your next project
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="project_portfolio_hub.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center justify-center">
+                    <span>View My Projects</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                <a href="contact_professional_nexus.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200 inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Skill filter functionality
+        const filterBtns = document.querySelectorAll('.skill-filter-btn');
+        const skillCards = document.querySelectorAll('.skill-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+
+                // Filter cards
+                skillCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-scale-in');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Skill card hover effects
+        skillCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px)';
+                card.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // Animate progress bars on scroll
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const progressObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBar = entry.target.querySelector('.skill-progress-bar');
+                    if (progressBar) {
+                        const width = progressBar.style.width;
+                        progressBar.style.width = '0%';
+                        setTimeout(() => {
+                            progressBar.style.width = width;
+                            progressBar.style.transition = 'width 1s ease-in-out';
+                        }, 100);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe skill cards for progress animation
+        skillCards.forEach(card => {
+            progressObserver.observe(card);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-medium');
+            } else {
+                navbar.classList.remove('shadow-medium');
+            }
+        });
+
+        // Add CSS for dynamic styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .skill-filter-btn {
+                @apply px-6 py-3 rounded-lg font-medium text-text-secondary border border-surface-200 hover:border-accent hover:text-accent transition-all duration-200 inline-flex items-center;
+            }
+            .skill-filter-btn.active {
+                @apply bg-accent text-white border-accent;
+            }
+            .skill-card {
+                @apply card cursor-pointer transition-all duration-300 ease-in-out;
+            }
+            .skill-card-header {
+                @apply flex items-start space-x-3 mb-4;
+            }
+            .skill-icon {
+                @apply w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0;
+            }
+            .skill-title {
+                @apply text-lg font-semibold text-text-primary mb-2;
+            }
+            .skill-badges {
+                @apply flex flex-wrap gap-2;
+            }
+            .skill-badge {
+                @apply px-2 py-1 text-xs font-medium rounded-full;
+            }
+            .skill-badge.recently-used {
+                @apply bg-success/10 text-success;
+            }
+            .skill-badge.advanced {
+                @apply bg-primary/10 text-primary;
+            }
+            .skill-badge.intermediate {
+                @apply bg-accent/10 text-accent;
+            }
+            .skill-badge.beginner {
+                @apply bg-warning/10 text-warning;
+            }
+            .skill-progress {
+                @apply w-full bg-surface-200 rounded-full h-2 mb-4;
+            }
+            .skill-progress-bar {
+                @apply bg-gradient-to-r from-accent to-secondary h-2 rounded-full transition-all duration-1000 ease-in-out;
+            }
+            .skill-description {
+                @apply text-text-secondary text-sm mb-4 leading-relaxed;
+            }
+            .skill-applications {
+                @apply flex flex-wrap gap-2;
+            }
+            .application-tag {
+                @apply px-2 py-1 bg-surface text-text-secondary text-xs rounded-md;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

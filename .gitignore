@@ -1,5 +1,32 @@
-.DS_Store
-node_modules
-.idea
+# Dependency directories
+node_modules/
+# npm-specific files
 package-lock.json
-.vercel
+
+# Tailwind CSS generated file
+css/main.css
+
+# Log files
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Vercel deployment files
+.vercel/
+
+# Image files from a specific folder (if you plan to use one)
+# For example, if you had an 'uploads' or 'dist' folder
+# /dist/
+# /uploads/
+
+# Dhiwise-related files that are automatically generated
+dhws-data-injector.js

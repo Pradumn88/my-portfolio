@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Portfolio - Pradumn Pandey | Data Science & Full-Stack Development</title>
+    <meta name="description" content="Explore Pradumn Pandey's comprehensive project portfolio featuring data science applications, full-stack web development, and machine learning solutions with live demos and code repositories." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpradumnpo9600back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="font-inter bg-background text-text-primary overflow-x-hidden">
+    <!-- Floating Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+        <div class="backdrop-blur-custom bg-white/90 border-b border-surface-200/50">
+            <div class="container-custom px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <!-- Logo/Name -->
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">PP</span>
+                        </div>
+                        <span class="font-poppins font-semibold text-lg text-primary">Pradumn Pandey</span>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="hero_landing_section.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
+                        <a href="about_education_ecosystem.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">About</a>
+                        <a href="technical_skills_showcase.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">Skills</a>
+                        <a href="project_portfolio_hub.html" class="nav-link text-primary font-medium hover:text-secondary transition-colors duration-200">Projects</a>
+                        <a href="experience_achievement_timeline.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">Experience</a>
+                        <a href="contact_professional_nexus.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-200">Contact</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-surface-100 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <div id="mobile-menu" class="md:hidden mt-4 pb-4 border-t border-surface-200 hidden">
+                    <div class="flex flex-col space-y-3 pt-4">
+                        <a href="hero_landing_section.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Home</a>
+                        <a href="about_education_ecosystem.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">About</a>
+                        <a href="technical_skills_showcase.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Skills</a>
+                        <a href="project_portfolio_hub.html" class="text-primary font-medium py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Projects</a>
+                        <a href="experience_achievement_timeline.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Experience</a>
+                        <a href="contact_professional_nexus.html" class="text-text-secondary hover:text-primary py-2 px-4 rounded-lg hover:bg-surface-100 transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 400L200 350L400 380L600 320L800 360L1000 300L1200 330V600H0V400Z" fill="currentColor" class="text-primary"/>
+                <path d="M0 450L150 420L350 440L550 380L750 410L950 360L1200 390V600H0V450Z" fill="currentColor" class="text-secondary"/>
+            </svg>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-16 h-16 bg-accent/10 rounded-full animate-pulse-slow"></div>
+        <div class="absolute bottom-20 right-16 w-12 h-12 bg-primary/10 rounded-full animate-pulse-slow" style="animation-delay: 1s;"></div>
+
+        <div class="relative z-10 container-custom px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Badge -->
+                <div class="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full mb-6 animate-fade-in">
+                    <svg class="w-4 h-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    <span class="text-sm font-medium text-accent">Project Portfolio</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="hero-title text-primary mb-6 animate-slide-up">
+                    Turning Ideas into <span class="text-gradient">Digital Solutions</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="body-lg text-text-secondary mb-8 max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.2s;">
+                    Explore my comprehensive collection of data science applications, full-stack web development projects, and machine learning solutions. Each project demonstrates practical problem-solving with detailed case studies, live demos, and open-source code.
+                </p>
+
+                <!-- Stats -->
+                <div class="flex flex-wrap justify-center gap-8 mb-12 animate-scale-in" style="animation-delay: 0.3s;">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">4</div>
+                        <div class="text-sm text-text-secondary">Projects Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">8</div>
+                        <div class="text-sm text-text-secondary">Technologies Used</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">100%</div>
+                        <div class="text-sm text-text-secondary">Open Source</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 bg-white border-b border-surface-200">
+        <div class="container-custom px-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-3">
+                    <button class="filter-btn active" data-filter="all">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                        All Projects
+                    </button>
+                    <button class="filter-btn" data-filter="data-science">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                        Data Science
+                    </button>
+                    <button class="filter-btn" data-filter="web-app">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                        Web Apps
+                    </button>
+                    <button class="filter-btn" data-filter="machine-learning">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                        ML & AI
+                    </button>
+                </div>
+
+                <!-- Search and Reset -->
+                <div class="flex items-center gap-3">
+                    <div class="relative">
+                        <input type="text" id="search-input" placeholder="Search projects..." class="input-field pl-10 pr-4 py-2 w-64" />
+                        <svg class="w-5 h-5 text-text-muted absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <button id="reset-filters" class="btn-outline px-4 py-2 text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-16 bg-surface">
+        <div class="container-custom px-6">
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1: LMS College Site -->
+                <div class="project-card" data-category="web-app" data-title="LMS College Site">
+                    <div class="card group hover:shadow-card-hover cursor-pointer h-full flex flex-col">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80" alt="LMS College Site" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <h3 class="subsection-title mb-2">LMS Site</h3>
+                            <p class="text-text-secondary mb-4 flex-1">A learning management system frontend website built with React.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full">React</span>
+                                <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">Web App</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://lms-rfontend.vercel.app/" target="_blank" class="btn-primary flex-1 text-center text-sm py-2">
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/Pradumn88/lms-college-site.git" target="_blank" class="btn-outline px-4 py-2 text-sm">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: IBM Internship Project -->
+                <div class="project-card" data-category="data-science" data-title="IBM Internship Project">
+                    <div class="card group hover:shadow-card-hover cursor-pointer h-full flex flex-col">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="IBM Internship Project" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <h3 class="subsection-title mb-2">IBM Internship Project</h3>
+                            <p class="text-text-secondary mb-4 flex-1">Project developed during my internship at IBM in the 6th semester.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full">Data Science</span>
+                                <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">Internship</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Pradumn88/summer_internship.git" target="_blank" class="btn-outline flex-1 text-center text-sm py-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: PrepAI -->
+                <div class="project-card" data-category="machine-learning" data-title="PrepAI">
+                    <div class="card group hover:shadow-card-hover cursor-pointer h-full flex flex-col">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="PrepAI" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <h3 class="subsection-title mb-2">PrepAI</h3>
+                            <p class="text-text-secondary mb-4 flex-1">A collaborative AI-driven project for interview analysis.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full">AI</span>
+                                <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">Machine Learning</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/suhanpahari/PrepAI.git" target="_blank" class="btn-outline flex-1 text-center text-sm py-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Online Exam Platform (In Progress) -->
+                <div class="project-card" data-category="web-app" data-title="Online Exam Platform">
+                    <div class="card group hover:shadow-card-hover cursor-pointer h-full flex flex-col">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80" alt="Online Exam Platform" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <h3 class="subsection-title mb-2">Online Exam Platform (In Progress)</h3>
+                            <p class="text-text-secondary mb-4 flex-1">An examination platform with features like tab switch detection and timer-based sessions.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full">Web App</span>
+                                <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full">React</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Pradumn88/online-exam-platform.git" target="_blank" class="btn-outline flex-1 text-center text-sm py-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="text-center py-16 hidden">
+                <svg class="w-16 h-16 text-text-muted mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29.82-5.877 2.172M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.875a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0z"/>
+                </svg>
+                <h3 class="subsection-title mb-2">No Projects Found</h3>
+                <p class="text-text-secondary mb-4">Try adjusting your search criteria or filters.</p>
+                <button onclick="resetFilters()" class="btn-primary">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+        <div class="container-custom px-6 text-center">
+            <h2 class="section-title text-white mb-6">Ready to Collaborate?</h2>
+            <p class="body-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                Let's discuss how we can work together on your next project. I'm always excited to tackle new challenges and create innovative solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_professional_nexus.html" class="btn-primary bg-white text-primary hover:bg-surface-100">
+                    Get In Touch
+                </a>
+                <a href="javascript:void(0)" onclick="downloadResume()" class="btn-outline border-white text-white hover:bg-white hover:text-primary">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="p-6">
+                    <!-- Modal Header -->
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 id="modal-title" class="section-title mb-0">Project Details</h3>
+                        <button onclick="closeProjectModal()" class="p-2 hover:bg-surface-100 rounded-lg transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Modal Content -->
+                    <div id="modal-content">
+                        <!-- Content will be dynamically loaded -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        const searchInput = document.getElementById('search-input');
+        const resetBtn = document.getElementById('reset-filters');
+        const noResults = document.getElementById('no-results');
+
+        // Filter button styles
+        filterBtns.forEach(btn => {
+            btn.classList.add('px-4', 'py-2', 'rounded-lg', 'text-sm', 'font-medium', 'transition-all', 'duration-200', 'flex', 'items-center');
+            if (btn.classList.contains('active')) {
+                btn.classList.add('bg-primary', 'text-white');
+            } else {
+                btn.classList.add('bg-surface-100', 'text-text-secondary', 'hover:bg-surface-200');
+            }
+        });
+
+        // Filter projects
+        function filterProjects() {
+            const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+            const searchTerm = searchInput.value.toLowerCase();
+            let visibleCount = 0;
+
+            projectCards.forEach(card => {
+                const category = card.dataset.category;
+                const title = card.dataset.title.toLowerCase();
+                
+                const matchesFilter = activeFilter === 'all' || category.includes(activeFilter);
+                const matchesSearch = title.includes(searchTerm);
+                
+                if (matchesFilter && matchesSearch) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        // Filter button event listeners
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active state
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-primary', 'text-white');
+                    b.classList.add('bg-surface-100', 'text-text-secondary');
+                });
+                btn.classList.add('active', 'bg-primary', 'text-white');
+                btn.classList.remove('bg-surface-100', 'text-text-secondary');
+                
+                filterProjects();
+            });
+        });
+
+        // Search input event listener
+        searchInput.addEventListener('input', filterProjects);
+
+        // Reset filters
+        function resetFilters() {
+            // Reset active filter
+            filterBtns.forEach(b => {
+                b.classList.remove('active', 'bg-primary', 'text-white');
+                b.classList.add('bg-surface-100', 'text-text-secondary');
+            });
+            filterBtns[0].classList.add('active', 'bg-primary', 'text-white');
+            filterBtns[0].classList.remove('bg-surface-100', 'text-text-secondary');
+            
+            // Clear search
+            searchInput.value = '';
+            
+            // Show all projects
+            projectCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            
+            noResults.classList.add('hidden');
+        }
+
+        resetBtn.addEventListener('click', resetFilters);
+
+        // Project modal functionality
+        const projectModal = document.getElementById('project-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalContent = document.getElementById('modal-content');
+
+        const projectData = {
+            'ecommerce-dashboard': {
+                title: 'E-commerce Analytics Dashboard',
+                description: 'A comprehensive real-time analytics dashboard designed for e-commerce platforms, featuring predictive sales modeling and advanced customer behavior analysis.',
+                problem: 'E-commerce businesses struggle to make data-driven decisions due to scattered analytics and lack of predictive insights into customer behavior and sales trends.',
+                solution: 'Developed an integrated dashboard that consolidates multiple data sources, provides real-time analytics, and uses machine learning for predictive modeling.',
+                implementation: 'Built using React for the frontend with Chart.js for visualizations, Python backend with Flask, and integrated with PostgreSQL database. Implemented real-time updates using WebSocket connections.',
+                results: 'Increased decision-making speed by 40%, improved sales forecasting accuracy by 25%, and provided actionable insights that led to 15% increase in customer retention.',
+                features: ['Real-time sales tracking', 'Customer behavior analysis', 'Predictive sales modeling', 'Interactive data visualizations', 'Automated reporting'],
+                tech: ['Python', 'React', 'Pandas', 'Chart.js', 'PostgreSQL', 'Flask', 'WebSocket'],
+                github: 'https://github.com/pradumn/ecommerce-dashboard',
+                demo: 'https://ecommerce-dashboard-demo.vercel.app'
+            },
+            'stock-predictor': {
+                title: 'Stock Price Predictor ML Model',
+                description: 'Advanced machine learning model using LSTM neural networks to predict stock prices with high accuracy and real-time data integration.',
+                problem: 'Traditional stock analysis methods lack the ability to process complex patterns and provide accurate short-term predictions for trading decisions.',
+                solution: 'Implemented LSTM neural networks to analyze historical stock data, market indicators, and sentiment analysis for accurate price predictions.',
+                implementation: 'Used TensorFlow and Keras for model development, integrated with real-time stock APIs, and created interactive visualizations using Plotly.',
+                results: 'Achieved 85% prediction accuracy for 5-day forecasts, processed over 10,000 data points daily, and provided actionable trading insights.',
+                features: ['LSTM neural network architecture', 'Real-time data integration', 'Interactive price charts', 'Technical indicator analysis', 'Sentiment analysis integration'],
+                tech: ['Python', 'TensorFlow', 'LSTM', 'Plotly', 'Pandas', 'NumPy', 'Alpha Vantage API'],
+                github: 'https://github.com/pradumn/stock-predictor',
+                demo: 'https://stock-predictor-demo.herokuapp.com'
+            },
+            'task-manager': {
+                title: 'Task Management Application',
+                description: 'Full-stack productivity application with real-time collaboration features, intuitive drag-and-drop interface, and advanced project management capabilities.',
+                problem: 'Teams struggle with task coordination, lack real-time collaboration tools, and need better project visibility and progress tracking.',
+                solution: 'Created a comprehensive task management platform with real-time updates, collaborative features, and intuitive project organization.',
+                implementation: 'Built with React frontend, Node.js/Express backend, MongoDB for data storage, and Socket.io for real-time collaboration features.',
+                results: 'Improved team productivity by 30%, reduced project completion time by 20%, and enhanced team communication efficiency.',
+                features: ['Drag-and-drop task management', 'Real-time collaboration', 'Project timeline visualization', 'Team member assignments', 'Progress tracking and reporting'],
+                tech: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Express', 'JWT Authentication'],
+                github: 'https://github.com/pradumn/task-manager',
+                demo: 'https://task-manager-demo.netlify.app'
+            },
+            'weather-prediction': {
+                title: 'Weather Prediction System',
+                description: 'Advanced weather forecasting system using ensemble machine learning models with high accuracy for extended period predictions.',
+                problem: 'Existing weather prediction systems lack accuracy for extended forecasts and fail to provide localized predictions for specific regions.',
+                solution: 'Developed an ensemble machine learning system combining multiple algorithms for improved accuracy and localized weather predictions.',
+                implementation: 'Used Python with Scikit-learn for model development, FastAPI for backend services, and integrated with multiple weather data sources.',
+                results: 'Achieved 92% accuracy for 7-day forecasts, processed weather data from 500+ locations, and provided reliable predictions for agricultural planning.',
+                features: ['Ensemble ML models', '7-day forecast accuracy', 'Localized predictions', 'Historical data analysis', 'API integration'],
+                tech: ['Python', 'Scikit-learn', 'FastAPI', 'Docker', 'Pandas', 'Weather APIs'],
+                github: 'https://github.com/pradumn/weather-prediction',
+                demo: 'https://weather-prediction-api.herokuapp.com'
+            },
+            'social-api': {
+                title: 'Social Media REST API',
+                description: 'Scalable REST API for social media platform with comprehensive authentication, real-time notifications, and robust testing suite.',
+                problem: 'Building scalable social media platforms requires robust backend infrastructure that can handle high concurrent users and real-time interactions.',
+                solution: 'Developed a comprehensive REST API with JWT authentication, real-time features, and optimized database queries for scalability.',
+                implementation: 'Built with Node.js and Express, PostgreSQL for data persistence, Redis for caching, and comprehensive testing with Jest.',
+                results: 'Successfully handles 1000+ concurrent users, achieved 99.9% uptime, and reduced API response time by 40% through optimization.',
+                features: ['JWT Authentication', 'Real-time notifications', 'Scalable architecture', 'Comprehensive testing', 'Rate limiting and security'],
+                tech: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'JWT', 'Jest'],
+                github: 'https://github.com/pradumn/social-media-api',
+                demo: 'https://social-api-docs.herokuapp.com'
+            },
+            'customer-segmentation': {
+                title: 'Customer Segmentation Analysis',
+                description: 'Advanced customer segmentation using K-means clustering and RFM analysis to identify distinct customer groups and behavior patterns.',
+                problem: 'Businesses struggle to understand their customer base and create targeted marketing strategies without proper customer segmentation.',
+                solution: 'Implemented advanced clustering algorithms and RFM analysis to identify distinct customer segments and provide actionable business insights.',
+                implementation: 'Used Python with Pandas for data processing, Scikit-learn for clustering algorithms, and Seaborn for data visualization.',
+                results: 'Identified 5 distinct customer segments with 94% classification accuracy, leading to 25% improvement in marketing campaign effectiveness.',
+                features: ['K-means clustering', 'RFM analysis', 'Customer behavior insights', 'Interactive visualizations', 'Actionable recommendations'],
+                tech: ['Python', 'Pandas', 'Scikit-learn', 'Seaborn', 'Matplotlib', 'Jupyter'],
+                github: 'https://github.com/pradumn/customer-segmentation',
+                demo: 'https://customer-segmentation-analysis.herokuapp.com'
+            }
+        };
+
+        function openProjectModal(projectId) {
+            const project = projectData[projectId];
+            if (!project) return;
+
+            modalTitle.textContent = project.title;
+            modalContent.innerHTML = `
+                <div class="space-y-6">
+                    <!-- Project Image -->
+                    <div class="w-full h-64 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg flex items-center justify-center">
+                        <svg class="w-16 h-16 text-primary/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Description -->
+                    <div>
+                        <p class="body-lg text-text-secondary">${project.description}</p>
+                    </div>
+
+                    <!-- Problem Statement -->
+                    <div>
+                        <h4 class="subsection-title text-primary mb-3">Problem Statement</h4>
+                        <p class="text-text-secondary">${project.problem}</p>
+                    </div>
+
+                    <!-- Solution Approach -->
+                    <div>
+                        <h4 class="subsection-title text-primary mb-3">Solution Approach</h4>
+                        <p class="text-text-secondary">${project.solution}</p>
+                    </div>
+
+                    <!-- Technical Implementation -->
+                    <div>
+                        <h4 class="subsection-title text-primary mb-3">Technical Implementation</h4>
+                        <p class="text-text-secondary mb-4">${project.implementation}</p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2">
+                            ${project.tech.map(tech => `<span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div>
+                        <h4 class="subsection-title text-primary mb-3">Key Features</h4>
+                        <ul class="space-y-2">
+                            ${project.features.map(feature => `<li class="flex items-center text-text-secondary"><svg class="w-5 h-5 text-success mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>${feature}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <!-- Results & Impact -->
+                    <div>
+                        <h4 class="subsection-title text-primary mb-3">Results & Impact</h4>
+                        <p class="text-text-secondary">${project.results}</p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex gap-4 pt-4 border-t border-surface-200">
+                        <a href="${project.demo}" target="_blank" class="btn-primary flex-1 text-center">
+                            <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2M7 7h10v10M7 7l10 10"></path>
+                            </svg>
+                            Live Demo
+                        </a>
+                        <a href="${project.github}" target="_blank" class="btn-outline flex-1 text-center">
+                            <svg class="w-5 h-5 mr-2 inline" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            projectModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            projectModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on backdrop click
+        projectModal.addEventListener('click', (e) => {
+            if (e.target === projectModal) {
+                closeProjectModal();
+            }
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !projectModal.classList.contains('hidden')) {
+                closeProjectModal();
+            }
+        });
+
+        // Download resume function
+        function downloadResume() {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = '#'; // Replace with actual resume URL
+            link.download = 'Pradumn_Pandey_Resume.pdf';
+            link.click();
+            
+            // Show feedback
+            const btn = event.target.closest('a');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Downloaded!</span>';
+            
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+            }, 2000);
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-medium');
+            } else {
+                navbar.classList.remove('shadow-medium');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.project-card');
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
