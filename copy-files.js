@@ -4,28 +4,35 @@ const path = require('path');
 // Create dist directory
 fs.ensureDirSync('dist');
 
-// Files and directories to copy
+// Copy HTML files from pages to dist root
+const pagesDir = 'pages';
+if (fs.existsSync(pagesDir)) {
+    const pagesFiles = fs.readdirSync(pagesDir);
+    pagesFiles.forEach(file => {
+        if (file.endsWith('.html')) {
+            const src = path.join(pagesDir, file);
+            const dest = path.join('dist', file);
+            fs.copySync(src, dest);
+            console.log(`Copied: ${src} -> ${dest}`);
+        }
+    });
+}
+
+// Copy other necessary files and directories
 const copyItems = [
-  'index.html',
-  'pages',
-  'public',
-  'css',
-  'JS'
+    'index.html',
+    'public',
+    'css',
 ];
 
-// Copy each item
 copyItems.forEach(item => {
-  if (fs.existsSync(item)) {
-    const dest = path.join('dist', item);
-    if (fs.lstatSync(item).isDirectory()) {
-      fs.copySync(item, dest);
+    if (fs.existsSync(item)) {
+        const dest = path.join('dist', item);
+        fs.copySync(item, dest);
+        console.log(`Copied: ${item} -> ${dest}`);
     } else {
-      fs.copySync(item, dest);
+        console.warn(`Warning: ${item} does not exist and won't be copied`);
     }
-    console.log(`Copied: ${item} -> ${dest}`);
-  } else {
-    console.warn(`Warning: ${item} does not exist and won't be copied`);
-  }
 });
 
 console.log('Build completed successfully!');

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Pradumn Pandey Portfolio",
   "main": "index.html",
+  "author": "Pradumn Pandey",
+  "license": "MIT",
   "dependencies": {
     "@dhiwise/component-tagger": "^1.0.10",
     "@tailwindcss/forms": "^0.5.7",
@@ -11,17 +13,11 @@
     "tailwindcss-fluid-type": "^2.0.7"
   },
   "scripts": {
-  "build": "npm run build:css && npm run copy-files",
-  "build:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css --minify",
-  "build:css:dev": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css",
-  "watch:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css --watch",
-  "copy-files": "node copy-files.js",
-  "dev": "npm run build:css:dev && npm run watch:css",
-  "start": "npx serve ./dist",
-  "vercel-build": "npm run build"
+    "build": "npm run build:css && npm run copy-files",
+    "build:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css --minify",
+    "copy-files": "node copy-files.js",
+    "vercel-build": "npm run build"
   },
-  "author": "Pradumn Pandey",
-  "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.4.17",
     "@tailwindcss/aspect-ratio": "^0.4.2",
