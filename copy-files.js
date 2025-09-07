@@ -46,15 +46,19 @@ publicFilesToRoot.forEach(file => {
     }
 });
 
-// Copy image files from root to dist
+// Copy all files with image extensions from root to dist
 const imageExtensions = ['.jpeg', '.jpg', '.png', '.gif', '.ico', '.svg', '.webp'];
-const rootFiles = fs.readdirSync('.');
-rootFiles.forEach(file => {
-    const ext = path.extname(file).toLowerCase();
-    if (imageExtensions.includes(ext)) {
-        const dest = path.join('dist', file);
-        fs.copySync(file, dest);
-        console.log(`Copied image: ${file} -> ${dest}`);
+const rootFiles = fs.readdirSync('.', { withFileTypes: true });
+
+rootFiles.forEach(dirent => {
+    if (dirent.isFile()) {
+        const file = dirent.name;
+        const ext = path.extname(file).toLowerCase();
+        if (imageExtensions.includes(ext)) {
+            const dest = path.join('dist', file);
+            fs.copySync(file, dest);
+            console.log(`Copied image: ${file} -> ${dest}`);
+        }
     }
 });
 
